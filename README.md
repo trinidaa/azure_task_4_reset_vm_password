@@ -1,4 +1,4 @@
-# Reset the VM admin password
+# Reset the VM Admin Password
 
 You can easily forget the VM password or lose the SSH key, but don't worry—it's not the end of the world! In Azure, you can easily reset the VM admin password; you will practice it in this task. 
 
@@ -12,7 +12,7 @@ Before completing any task in the module, make sure that you followed all the st
 
 3. In the *"mate-resources"* resource group, create a storage account (any name) and a *"task-artifacts"* container.
 
-4. Install [PowerShell 7](https://learn.microsoft.com/en-us/powershell/scripting/install/installing-powershell?view=powershell-7.4) on your computer. All tasks in this module use Powershell 7. To run it in the terminal, execute the following command: 
+4. Install [PowerShell 7](https://learn.microsoft.com/en-us/powershell/scripting/install/installing-powershell?view=powershell-7.4) on your computer. All tasks in this module use PowerShell 7. To run it in the terminal, execute the following command: 
     ```
     pwsh
     ```
@@ -52,7 +52,7 @@ In this task, you need to perform the following steps:
 
 5. When the solution is validated, stop the virtual machine. 
 
-## How to complete tasks in this module 
+## How to Complete Tasks in This Module 
 
 Tasks in this module are relying on 2 PowerShell scripts: 
 
@@ -69,8 +69,8 @@ Here is how to complete tasks in this module:
 
 4. Run `scripts/generate-artifacts.ps1` to generate task artifacts. The script will update the file `artifacts.json` in this repo. 
 
-5. Run `scripts/validate-artifacts.ps1` to test yourself. If tests are failing - follow the recommendation from the test script error message to fix or re-deploy your infrastructure. When you are ready to test yourself again - **re-generate the artifacts** (step 4) and re-run tests again. 
+5. Run `scripts/validate-artifacts.ps1` to test yourself. If tests are failing — follow the recommendation from the test script error message to fix or re-deploy your infrastructure. When you are ready to test yourself again — **re-generate the artifacts** (step 4) and re-run tests again. 
 
-6. When all tests will pass - commit your changes and submit the solution for review. 
+6. When all tests will pass — commit your changes and submit the solution for review. 
 
 Pro tip: If you are stuck with any of the implementation steps, run `scripts/generate-artifacts.ps1` and `scripts/validate-artifacts.ps1`. The validation script might give you a hint on what to do.  
