@@ -1,6 +1,6 @@
 # Reset the VM Admin Password
 
-You can easily forget the VM password or lose the SSH key, but don't worry—it's not the end of the world! In Azure, you can easily reset the VM admin password; you will practice it in this task. 
+You can easily forget the VM password or lose the SSH key, but don't worry — it's not the end of the world! In Azure, you can easily reset the VM admin password; you will practice it in this task. 
 
 ## Prerequisites
 
