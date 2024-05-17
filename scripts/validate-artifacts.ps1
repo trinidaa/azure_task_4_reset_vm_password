@@ -172,7 +172,7 @@ if ($httpNsgRule)  {
     throw "Unable to fing network security group rule which allows HTTP connection. Please check if you configured VM Network Security Group to allow connections on 8080 TCP port and try again."
 }
 
-$passwordResetExtention = ( $TemplateObject.resources | Where-Object {($_.type -eq "Microsoft.Compute/virtualMachines/extensions") -and ($_.name.Contains("enablevmAccess")) } ) 
+$passwordResetExtention = ( $TemplateObject.resources | Where-Object {($_.type -eq "Microsoft.Compute/virtualMachines/extensions") -and ($_.properties.type -eq "VMAccessForLinux") } ) 
 if ($passwordResetExtention) {
     Write-Output "`u{2705} Checked if VM admin password was reset - OK"
 } else {
